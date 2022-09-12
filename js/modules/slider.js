@@ -11,9 +11,7 @@ function slider({sliderSelector, slideSelector, btnPrevSlideSelector, btnNextSli
 
   
   document.querySelector("#total").textContent = `0${slides.length}`.slice(-2);
-  document.querySelector("#current").textContent = `0${currSlideIndex}`.slice(
-    -2
-    );
+  document.querySelector("#current").textContent = `0${currSlideIndex}`.slice(-2);
     
     slidesField.style.cssText = `width: ${100 * slides.length + "%"}; 
     display: flex; 
