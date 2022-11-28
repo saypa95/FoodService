@@ -38,6 +38,7 @@ function cards() {
   getResource("http://localhost:3000/menu").then((data) => {
     data.forEach(({ img, alt, title, descr, price }) => {
       new MenuCard(img, alt, title, descr, price, ".menu .container").render();
+      console.log("hello");
     });
   });
 }
